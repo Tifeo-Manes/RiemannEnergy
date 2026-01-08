@@ -1,6 +1,6 @@
-# RiemannEnergy: Certificación Formal de la Hipótesis de Riemann (RH)
+# RiemannEnergy: Formalismo para una Termodinamica sobre la propiedad de primalidad.
 
-Este repositorio contiene la formalización matemática y la certificación lógica de la resolución de la Hipótesis de Riemann, desarrollada por **Rubén González Martínez (2026)**. El proyecto utiliza el asistente de demostración interactivo **Lean 4** para verificar la consistencia de una prueba basada en la contradicción topológica entre la geometría espectral y la aritmética de los números primos.
+Este repositorio contiene la formalización matemática y la certificación lógica para una posible estrategia de resolución para la Hipótesis de Riemann, desarrollada por**Rubén González Martínez (2026)** [R. Gonmar]. El proyecto utiliza el asistente de demostración interactivo **Lean 4** para verificar la consistencia de una prueba basada en la contradicción topológica entre la geometría espectral y la aritmética de los números primos.
 
 ## 1. Estrategia de Resolución: La Arquitectura de los Seis Pilares
 
