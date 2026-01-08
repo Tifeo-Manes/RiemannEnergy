@@ -1,0 +1,13 @@
+# Lean 4 - Archivos de compilación y paquetes
+.lake/
+lake-packages/
+build/
+
+# Archivos de salida de objetos y C
+*.olean
+*.ilean
+*.c
+
+# Temporales de sistema
+.DS_Store
+Thumbs.db
