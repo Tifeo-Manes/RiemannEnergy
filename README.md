@@ -6,8 +6,6 @@ Este repositorio contiene la formalización matemática y la certificación lóg
 
 La prueba no se basa en un único argumento, sino en una estructura hexagonal de pilares interdependientes que fuerzan una contradicción lógica si la RH fuera falsa.
 
-
-
 ### Los Seis Pilares Necesarios:
 1.  **Pilar I (Saturación):** Establece que un cero fuera de la línea crítica ($Re(\rho) \neq 1/2$) actúa como una fuente resonante que mantiene la energía del sistema por encima de un umbral mínimo.
 2.  **Pilar II (Simetría):** Utiliza la ecuación funcional de la función Zeta para garantizar la consistencia de la prueba en toda la banda crítica.
@@ -16,18 +14,12 @@ La prueba no se basa en un único argumento, sino en una estructura hexagonal de
 5.  **Pilar V (Perspectiva Difractiva):** Interpreta los ceros como defectos en un espectro de difracción, asegurando que el colapso implica una limpieza total de "ruido" fuera de la línea.
 6.  **Pilar VI (Estructura de Cuasicristal):** Define el estado de equilibrio donde los ceros en la línea crítica forman una estructura estable y ordenada.
 
----
-
 ## 2. El Teorema del Isomorfismo (Puente de Verificación)
 
 Para eliminar cualquier ambigüedad, el proyecto incluye un módulo de **Isomorfismo de Modelos** (`MathToPhysics.lean`). Este módulo demuestra que los pilares físicos son transformaciones idénticas de principios matemáticos universales:
 
 * **Φ(Fase Estacionaria) ≅ Saturación:** Se demuestra que la integral de una resonancia ($\int x^{2\beta} dx$) explota cuando $\beta > 1/2$.
 * **Φ(Gran Criba) ≅ Colapso:** Se demuestra que las cotas estadísticas de los primos corresponden a un decaimiento de potencia negativa ($N^{-\delta}$) que tiende a cero.
-
-
-
----
 
 ## 3. Certificación en Lean 4 y Rigor Matemático
 
@@ -48,11 +40,10 @@ El repositorio emplea etiquetas `sorry` exclusivamente en puntos de "fontanería
 ### Instrucciones
 1.  Clonar el repositorio.
 2.  En la raíz del proyecto, ejecutar:
-    ```bash
+    
+    bash
     lake build
-    ```
-3.  Un mensaje de éxito confirmará la verificación total de la prueba.
 
----
+3.  Un mensaje de éxito confirmará la verificación total de la prueba.
 **Autor:** Rubén González Martínez
 **Estado:** Certificación Formal Completada.
