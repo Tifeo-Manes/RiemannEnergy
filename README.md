@@ -1,4 +1,4 @@
-# RiemannEnergy: Formalismo para una Termodinamica sobre la propiedad de primalidad.
+# RiemannEnergy: Formalismo para una Termodinamica sobre las propiedades de primalidad.
 
 Este repositorio contiene la formalización matemática y la certificación lógica para una posible estrategia de resolución para la Hipótesis de Riemann, desarrollada por**Rubén González Martínez (2026)** [R. Gonmar]. El proyecto utiliza el asistente de demostración interactivo **Lean 4** para verificar la consistencia de una prueba basada en la contradicción topológica entre la geometría espectral y la aritmética de los números primos.
 
