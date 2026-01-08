@@ -3,7 +3,7 @@ import RiemannEnergy.Blueprint
 
 def main : IO Unit := do
   IO.println "\n========================================================"
-  IO.println "       RIEMANN ENERGY: CERTIFICACIÓN FORMAL FINAL       "
+  IO.println "       RIEMANN ENERGY: Verificación de Estructura Formal      "
   IO.println "========================================================"
   IO.println ""
   IO.println "1. TRAZABILIDAD DOCUMENTAL (Blueprint):"
@@ -28,8 +28,8 @@ def main : IO Unit := do
   IO.println " CONCLUSIÓN FINAL"
   IO.println "========================================================"
   IO.println ""
-  IO.println " El sistema es ROBUSTO, TRAZABLE y CONSISTENTE."
-  IO.println " La Hipótesis de Riemann se sigue de los principios registrados."
+  IO.println " El sistema es TRAZABLE."
+  IO.println " La Hipótesis de Riemann se puede seguir de los principios registrados."
   IO.println ""
-  IO.println " Q.E.D."
+  IO.println ""
   IO.println "========================================================\n"
