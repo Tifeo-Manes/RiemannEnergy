@@ -45,5 +45,6 @@ El repositorio emplea etiquetas `sorry` exclusivamente en puntos de "fontanería
     lake build
 
 3.  Un mensaje de éxito confirmará la verificación total de la prueba.
-**Autor:** Rubén González Martínez
-**Estado:** Certificación Formal Completada.
+
+**Autor:** Rubén González Martínez.
+**Estado:** Evaluación parcial.
