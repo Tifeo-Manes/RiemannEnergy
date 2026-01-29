@@ -1,35 +1,25 @@
+/-!
+# Main.lean — Cierre del proyecto
+
+Este archivo sirve como “entry point” estándar para `lake build` / `lean Main.lean`.
+Importa el punto de entrada limpio `RiemannEnergy` y fija alias estables para los teoremas
+finales del cierre A2-b→A2-a (familias en `t`).
+
+No añade axiomas ni `sorry`.
+-/
+
 import RiemannEnergy
-import RiemannEnergy.Blueprint
 
-def main : IO Unit := do
-  IO.println "\n========================================================"
-  IO.println "       RIEMANN ENERGY: VERIFICACIÓN DE ESTRUCTURA FORMAL       "
-  IO.println "========================================================"
-  IO.println ""
-  IO.println "1. TRAZABILIDAD DOCUMENTAL (Blueprint):"
-  IO.println "---------------------------------------"
-  let refs := RiemannEnergy.Check_Full_Coverage
-  for ref in refs do
-    -- Usamos los nuevos nombres de campos aquí:
-    IO.println s!" [Source] {ref.paper} | {ref.source_section}"
-    IO.println s!"          -> {ref.source_item}"
-    IO.println s!"          -> {ref.description}"
-    IO.println ""
+noncomputable section
 
-  IO.println "2. VERIFICACIÓN TÉCNICA (Lean 4):"
-  IO.println "---------------------------------"
-  IO.println " [x] Física (Saturación) ............ VERIFICADO (Axioma Estructural)"
-  IO.println " [x] Álgebra (Exponentes) ........... VERIFICADO (Linarith / White Box)"
-  IO.println " [x] Análisis (Constantes) .......... VERIFICADO (Límites Robustos)"
-  IO.println " [x] Geometría (Núcleo > 0) ......... VERIFICADO (Constructivo |g|^2)"
-  IO.println " [x] Lógica (Sin Sorries) ........... VERIFICADO (Build Exitoso)"
-  IO.println ""
-  IO.println "========================================================"
-  IO.println " CONCLUSIÓN FINAL"
-  IO.println "========================================================"
-  IO.println ""
-  IO.println " El sistema es TRAZABLE."
-  IO.println " La Hipótesis de Riemann podría siguirse de los principios registrados."
-  IO.println ""
-  IO.println " "
-  IO.println "========================================================\n"
+namespace RiemannEnergy
+
+/-- Alias estable (dual). -/
+theorem Main_gap_stability_eventually_dual_fam :=
+  Gap_stability_eventually_dual_fam
+
+/-- Alias estable (primal). -/
+theorem Main_gap_stability_eventually_primal_fam :=
+  Gap_stability_eventually_primal_fam
+
+end RiemannEnergy
