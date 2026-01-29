@@ -39,9 +39,6 @@ El “front door” mínimo es:
 ```lean
 import RiemannEnergy.A2b_FamilyClosure_FINAL
 ```
-
-⚠️ En Lean, los `import` deben ir al comienzo del archivo (antes de `namespace`, `section`, etc.).
-
 Para disponer de un entry-point estándar del proyecto:
 
 - `Main.lean`  
@@ -193,13 +190,7 @@ lake build -Ktrace=true
 
 ---
 
-## 9) Licencia
+## 9) Contacto / referencia
 
-Añade aquí la licencia que quieras (por ejemplo MIT/BSD/GPL) y, si aplica, el CITATION.cff.
-
----
-
-## 10) Contacto / referencia
-
-- Autor: (tu nombre)
+- Autor: R. Gonmar [r.gonmar(arroba)diabasa.es]
 - Paper asociado: `Paper_RH_Programa_Incondicional_FINAL_UNICO_CLEAN9_INCOND_FINAL.tex`
